@@ -4,21 +4,16 @@ Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
+1. Get an API key for YouTube Data API v3 from [Google Developers](console.developers.google.com)
+2. Create a file called `config.js` in the `src` folder
+3. Paste the following snippet and enter in your API key
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
+var config = {
+    API_KEY : "YOUR-API-KEY"
+}
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
+#### Running the project
 ```
 > npm install
 > npm start
