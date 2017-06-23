@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import YTSearch from 'youtube-api-search'
 import SearchBar from './components/search_bar'
 
 var config = require('./config')
 
 const API_KEY = config.API_KEY
+
+YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
+	console.log(data)
+})
 
 // Create a new component. This componenet should produce some HTML
 const App = () => {
